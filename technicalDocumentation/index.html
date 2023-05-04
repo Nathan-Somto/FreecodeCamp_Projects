@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+     <link rel="stylesheet" href="./styles.css">
+</head><!-- src="/technicalDocumentation/python.jpg" -->
+<body>
+    <nav id="navbar">
+        <header>The Python Tutorial <img alt="python_logo" src="	https://docs.python.org/3/_static/py.svg"></header>
+        <ul>
+            <hr>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <hr>
+            <li><a class="nav-link" href="#What_you_should_know">What you should know</a></li>
+            <hr>
+            <li><a class="nav-link" href="#Comments">Comments</a></li>
+            <hr>
+            <li><a class="nav-link" href="#Number">Number</a></li>
+            <hr>
+            <li><a class="nav-link" href="#Strings">Strings</a></li><hr>
+            <li><a class="nav-link" href="#Lists">Lists</a></li><hr>
+            <li><a class="nav-link" href="#if_statements">if statements</a></li><hr>
+            <li><a  class="nav-link" href="#if_else_statements">if else statements</a></li><hr>
+            <li><a class="nav-link"href="#while_loops">while loops</a></li><hr>
+            <li><a class="nav-link" href="#for_loops">for loops</a></li><hr>
+            <li><a class="nav-link" href="#Functions">Functions</a></li><hr>
+            <li><a  class="nav-link"href="#Tuples">Tuples</a></li><hr>
+            <li><a  class="nav-link"href="#Dictionaries">Dictionaries</a></li><hr>
+            <li><a class="nav-link" href="#reading_files">reading files</a></li><hr>
+            <li><a class='nav-link' href="#writing_files">writing files</a></li><hr>
+            <li><a class="nav-link" href="#Errors_and_Exceptions">Errors and Exceptions</a></li><hr>
+            <!-- <li><a  class="nav-link" href="#classes">classes</a></li><hr> -->
+            
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section"  id="Introduction">
+            <header>Introduction</header>
+            <p>Python is an easy to learn, powerful programming language.
+                 It has efficient high-level data structures and a simple
+                  but effective approach to object-oriented programming.
+                   Python’s elegant syntax and dynamic typing
+                   , together with its interpreted nature, make it 
+                   an ideal language for scripting and
+                 rapid application development in many areas on most platforms.</p>
+                 <!-- for explanation -->
+           
+            
+        </section>
+        <section class="main-section" id="What_you_should_know">
+            <header >What you should know</header>
+            <p>This tutorial is very very brief its just to get you up to speed with how  to interact with python, in this tutorial wil not talk about input and print functions, we will mainly be focused on the general syntax of python, i hope you have fun with this tutorial and goodluck on your pythonista journey.</p>
+        </section>
+        <section class="main-section" id="Comments">
+            <header >Comments</header>
+            <article>
+            <p >
+                Comments are used to clarify code in Python.
+            </p>
+            <ul>
+                <li>Comments are used to turn off a line of code i.e the interpreter 
+                ignoring the line during execution</li>
+                <li>Comments start with the # symbol.</li>
+            </ul>
+                
+        <code>  # this is the first comment spam = 1
+          <br>
+         # and this is the second comment
+         <br>
+          # ... and now a third!
+          <br>
+        text = "# This is not a comment because it's inside quotes."
+        </code>
+                </article>
+        </section>
+      <!--   <section class="main-section">
+            <header id="Assignment_and_Variable"> Assignment and Variable
+            </header>
+            <p> the equals operator is used for assignment in python = not for equality</p>
+            <p>variables are to  containers for a value to be stored.</p>
+            <p>Variables are to the right of the assignment and the value is to the left</p>
+            <article>
+                >>>myvar ="my value"<br>
+                >>>print(myvar) # my value<br>
+                >>>"my value" = myvar<br>
+                >>>"my value" # will cause an error
+            </article>
+        </section> -->
+
+        <section class="main-section" id="Number">
+            <header>Number</header>
+            <article>
+            <p>Python supports numbers</p>
+            <ul>
+            <li> Types of numbers : Floats, Integers,Decimal,Fraction and Decimals. </li>
+            <li>Python also supports a range of  arithmetic operations : (+) ,(-) ,(*) ,(/) and (())</li>
+            <ul><code>
+
+           >>> 2 + 2<br>
+                4<br>
+                >>> 50 - 5*6<br>
+                20<br>
+                >>> (50 - 5*6) / 4<br>
+                5.0<br>
+                >>> 8 / 5  # division always returns a floating point number<br>
+                1.6</code>
+                <br>
+                <code>
+                >>> 17 / 3  # classic division returns a float
+                    <br>
+                    5.666666666666667<br>
+                    >>><br>
+                    >>> 17 // 3  # floor division discards the fractional part<br>
+                    5<br>
+                    >>> 17 % 3  # the % operator returns the remainder of the division<br>
+                    2<br>
+                    >>> 5 * 3 + 2  # floored quotient * divisor + remainder<br>
+                    17
+                </code>
+                <br>
+            <code>
+                    >>> 5 ** 2  # 5 squared<br>
+25<br>
+>>> 2 ** 7  # 2 to the power of 7<br>
+128<br> </code>
+                </article>
+
+        </section>
+        <section class="main-section" id="Strings">
+            <header >Strings</header>
+            <article>
+            <p>Besides numbers, Python can also manipulate strings,
+                 which can be expressed in several ways. They can be enclosed in 
+                 single quotes ('...') or double quotes ("...")
+                 with the same result 2. \ can be used to escape quotes:</p>
+                 <code>
+                    >>> 'spam eggs'  # single quotes<br>
+'spam eggs'<br>
+>>> 'doesn\'t'  # use \' to escape the single quote...<br>
+"doesn't" <br>
+>>> "doesn't"  # ...or use double quotes instead<br>
+"doesn't"<br>
+>>> '"Yes," they said.'<br>
+'"Yes," they said.'<br>
+>>> "\"Yes,\" they said." <br>
+'"Yes," they said.' <br>
+>>> '"Isn\'t," they said.' <br>
+'"Isn\'t," they said.</code>
+                 </article>
+        </section>
+        <section class="main-section" id="Lists">
+            <header >Lists</header>
+            <article>
+            <p>
+                Python knows a number of compound data types, used
+                 to group together other values. The most versatile is
+                  the list, which can be written as a list of comma-separated
+                   values (items) between square brackets. Lists might contain items
+                    of different types,
+                 but usually the items all have the same type.
+            </p>
+            <code>
+                >>>shoppingItems=["eggs","fish","milk","2 biscuits"]
+            </code>
+        </section>
+        <section class="main-section" id="if_statements">
+            <header >if statements</header>
+            <article>
+            <p>Perhaps the most well-known statement type is the if statement. </p>
+            <ul>
+            <li>code must be indented( 4 spaces)  after the if statement has been declared for example:</li>
+            </ul>
+            <code>>> x=2 
+                if x == 2:  # == used for equality<br>
+                ....>>>X <br>
+                >>2
+            </code>
+        </article>
+        </section>
+        <section class="main-section" id="if_else_statements">
+            <header >if else statements</header>
+            <article>
+            <p> the if statement an be extended to test for more conditions example: </p>
+      <code>       >>> x= 42<br>
+         if x &lt 0:    <br>   
+...     x = 0 <br>
+...     >>>'Negative changed to zero' <br>
+... elif x == 0: <br>
+...     'Zero' <br>
+... elif x == 1: <br>
+...     "Single" <br>
+... else: <br>
+...     'More'
+...</code>
+            </article>
+        </section>
+        <section class="main-section" id="while_loops">
+            <header > while loops</header>
+            <p>Loops are generally used to execute a line of code a certain number of times.</p>
+            <ul>
+                <li>the while loop is a condition controlled loop</li>
+                <li>the key word <code>while</code> starts a while loop</li>
+                <li>a condition is tested then it  executes until that condition has been satisfied. </li>
+                <li>a counter variable is usually used in a while loop</li>
+            </ul>
+            <code>
+                >>>i=0<br>
+                >>> while i<10:<br>
+                >>>...."hello world" #hello world is printed 10 times<br>
+                >>>....i=i+1
+            </code>
+        </section>
+        <section class="main-section" id="for_loops">
+            <header >for loops</header>
+            <p>difference between a while loop and a for loop is that a while loop uses a condtion, whya for loop uses a counter</p>
+            <ul><li>for loops provide us with syntatic sugar to execute a particular block of code</li>
+                <li>with the keyword<code>for</code> which uses a counter variable declared next to it iterates over an iterable</li>
+                <ul>
+                    <code>
+                        >>>iterable=5<br>
+                        >>>for variable in iterable:<br>
+                        >>>.... i # it will print from 0 to 5<br>
+                    </code>
+        </section>
+        <section class="main-section" id="Functions">
+            <header >Functions</header>
+            <p>functions are used in writing reusable blocks of code it allows for modularity</p>
+            <ul>
+                <li>python in my view provides a sexy and easy way to write functions by just using the keyword <code>def</code></li>
+                <li>with a function name which can be used else where in the code.</li>
+            </ul>
+            <code>
+                >>>def main():<br>
+                >>>...."Hello world!"<br>
+                >>>main() #prints hello world!, cool isnt it?
+            </code>
+        </section>
+        <section class="main-section" id="Tuples">
+            <header >Tuples</header>
+            <p>remember we talked about lists earlier,so now lets talk about Tuples</p>
+            <ul><li>a tuple provides an immutable way to store a collection of related or different items.</li>
+                <li> wow that seems a lot , let me break it down using <code>( )</code> we can store data that cannot be changed</li>
+            </ul>
+            <code>
+              >>>  mytuple =("first",'second',"third")<br>
+              >>> for items in mytuple:<br>
+              >>>....items # prints "first","second" ."third"<br>
+               >>> mytuple[0]="fourth" # no way
+            </code>
+        </section>
+        <section class="main-section" id="Dictionaries">
+            <header >Dictionaries</header>
+            <p>similar to js objects dictionaries store data in what we call key value pairs </p>
+            <ul><li>a key is used to access a value </li>
+                <li> a value is  accessed by a key.</li>
+                <li> generally we use curly braces to declare dictionaries <code>{}</code></li>
+            </ul>
+            <code>
+                >>> student={"name":"somto","level":200}<br>
+                >>>student["name"] #"somto"
+            </code>
+        </section>
+        
+        <section class="main-section" id="reading_files">
+            <header >reading files</header>
+            <p>python allows use to read files on your system very cool right</p>
+            <ul><li> for you to read a file it must exist</li>
+                <li> we use the <code>open()</code> function which accepts two arguments <br>the name of the file and the mode you want to open it in this case<code>"r"</code> </li>
+            </ul>
+            <code>
+                >>>myfile =open("food.txt","r") # it must exist <br>
+                >>>myfile.read() # reads content within a file<br>
+                >>>myfile.close()
+            </code>
+        </section>
+        <section class="main-section" id="writing_files">
+            <header >writing files</header>
+            <p>python allows us to write to a file</p>
+            <ul>
+                <li>
+                    we use the <code>open()</code> function which accepts two arguments <br>the name of the file and the mode you want to open it in this case<code>"w"</code> </li>
+                </li>
+                <li>if the file does not exist python automatically creates a new file</li>
+                <li>if the file exists it is overwritten.</li>
+            </ul>
+            <code>
+                >>>myfile =open("food.txt","w") # does not need to exist but if it does overwritten <br>
+                >>>myfile.write("meat") # writes content to a file<br>
+                >>>myfile.close()
+            </code>
+        </section>
+        <section class="main-section" id="Errors_and_Exceptions">
+            <header >Errors and Exceptions</header>
+            <p>python allows us to try a a particular block of code and if an error occurs catch it</p>
+            <ul>
+                <li>using the <code>try</code> and the <code>catch</code></li>
+            </ul>
+            <code>
+                
+                >>>try:<br>
+                 ....4=p<br>
+                 >>>catch:<br>
+                 >>>...."error occured" #error occured.
+
+                
+            </code>
+        </section>
+        
+    </main>
+    <footer><p>This is just a breif summary of the python documentation for more info check out <a href=https://docs.python.org/3/tutorial/index.html">Python Docs</a></p>
+    <p>&copy <a href="#">wildcatmidnight883</a> 2022</p></footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

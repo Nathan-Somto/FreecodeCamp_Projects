@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body><header>
+    <h1 id ="title"> Superhero Survey</h1>
+    <p id="description">Unlock your inner Superhero fill out this form to see what type of superhero you might be</p>
+</header>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">
+                Name
+            <input id ="name" type="text"  placeholder="Enter your First name" name="name" required>
+            </label>
+            <label id="email-label">
+                Email
+            <input id ="email"  name="email" type="email" placeholder="Enter your Email" required>
+            </label>
+            <label id="number-label">
+                Age
+            <input placeholder="Age"  name="age"id ="number" type ="number" min="0" max="120" required>
+            </label>
+            <h2>Select a Fictional Home</h2>
+            <select id ="dropdown">
+                <option value="">select an option</option>
+                <option value="1">Gotham</option>
+                <option value="2">Metropolis</option>
+                <option value="3">Washington</option>
+                <option value="4">New York</option>
+                <option value="5">Los Angeles</option> 
+                <option value="6"> New York City</option>
+                <option value="7">Atlantis</option>
+                <option value="8">Star City</option>
+                <option value="9"> San Francisco</option>
+                <option value="10"> St. Canard</option>
+                <option value="11">Arizona</option> 
+                <option value="12"> Metroville</option>
+                <option value="13"> Brooklyn</option>
+                <option value="14"> Seattle</option>
+                <option value="15">Mouseville</option>
+                <option value="16">Central City</option> 
+
+            </select>
+        </fieldset>
+        <fieldset class="second">
+            <h2>Will you like a Secret Identity ?</h2>
+            <label><input type="radio"  name="SameRadio" class="inline" checked value="yes">Yes</label>
+            <label><input type="radio" name="SameRadio" class="inline" value="no">No</label>
+            <h2> Select the Powers you will like (you can select all) </h2>
+            <label>
+                <input type="checkbox" value="Flight" class="inline" name="choice"> Flight</label>
+            <label>
+                <input type="checkbox" value="Strength" class="inline"> Strength</label>
+            <label>
+                <input type="checkbox" value="Speed" class="inline"> Speed</label>
+            <label>
+                <input type="checkbox" value="Tele" class="inline"> Telekinesis </label>
+            <label>
+                <input type="checkbox" value="Heat" class="inline"> Heat Vision
+                
+            </label>
+            <label>
+                <input type="checkbox" value="Sonar" class="inline"> Sonar
+                
+            </label>
+            
+            <label>
+                <input type="checkbox" value="Night" class="inline"> Night Vision
+                
+            </label>
+
+            <label>
+                <input type="checkbox" value="Wall" class="inline"> Wall Crawling
+                
+            </label>
+            <label>
+                <input type="checkbox" value="Machines" class="inline"> Controlling Machines
+                
+            </label>
+
+            <label>
+                <input type="checkbox" value="Control" class="inline">Plant Control
+                
+            </label>
+
+            <label>
+                <input type="checkbox" value="Others" class="inline">Healing Others
+                
+            </label>
+
+        </fieldset>
+        <fieldset class="third">
+            <label>Tells us more powers you might like to Add
+                <textarea rows="3" cols="30" class="powers"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" id ="submit" value="Submit">
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
